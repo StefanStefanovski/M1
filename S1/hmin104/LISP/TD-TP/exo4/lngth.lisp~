@@ -1,0 +1,5 @@
+(defun lngth (l)
+  (if(= nill (car l))
+      1
+    (+ 1 (lngth (cdr l)))))
+		

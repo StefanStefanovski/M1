@@ -1,0 +1,8 @@
+(defun mysubs(x y tree)
+  (cond(consp tree)
+       (mysubs x y (car tree))
+       (mysubs x y (cdr tree))
+       )
+  (cond(= (car tree) x )
+  
+	   

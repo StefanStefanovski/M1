@@ -1,0 +1,12 @@
+struct calc_msg {
+  long mtype;
+  char symb;
+  int x;
+  int y;
+} calc_msg;
+
+struct eval_msg {
+  long mtype;
+  int res;
+} eval_msg;
+

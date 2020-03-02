@@ -1,0 +1,6 @@
+(defun mysize(tree)
+  (if(consp tree)
+      (if(consp (car tree))
+	  (+ 1 (mysize (car tree)))
+	(+ 1 (mysize (cdr tree))))
+    )

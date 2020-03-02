@@ -1,0 +1,26 @@
+lock(mut)
+
+while(lignec < N){
+
+	x= ligne c;
+	
+	ligne c++;
+
+	unlock(..)
+	traiterLigne(..)
+	
+	lock(..)
+
+	compteur++;
+}
+
+if(compteur==n){
+	broadcast(..);
+}
+
+while(compteur < n){
+	
+	wait(..)
+
+}
+unlock
