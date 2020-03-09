@@ -1,0 +1,64 @@
+digraph G { 
+	rankdir=BT;
+	margin=0;
+	node [margin="0.03,0.03",fontname="DejaVu Sans"];
+	ranksep=0.3;
+	nodesep=0.2;
+//graph[label="name:Prix-Pate,concept number:23,object number:100,attribute number:11"
+17 [shape=none,label=<<table border="0" cellborder="1" cellspacing="0" port="p"><tr><td>Concept_Prix-Pate_1</td></tr><tr><td><br/></td></tr><tr><td>Margherita-cheezy<br/></td></tr></table>>];
+20 [shape=none,label=<<table border="0" cellborder="1" cellspacing="0" port="p"><tr><td>Concept_Prix-Pate_0</td></tr><tr><td><br/></td></tr><tr><td>Margherita-cheezy-fun<br/></td></tr></table>>];
+8 [shape=none,label=<<table border="0" cellborder="1" cellspacing="0" port="p"><tr><td>Concept_Prix-Pate_2</td></tr><tr><td>inf10<br/></td></tr><tr><td>Marherita_Fine<br/></td></tr></table>>];
+6 [shape=none,label=<<table border="0" cellborder="1" cellspacing="0" port="p"><tr><td>Concept_Prix-Pate_3</td></tr><tr><td><br/></td></tr><tr><td>Queen-cheezy-fun<br/>4fromage-cheezy-fun<br/></td></tr></table>>];
+10 [shape=none,label=<<table border="0" cellborder="1" cellspacing="0" port="p"><tr><td>Concept_Prix-Pate_5</td></tr><tr><td><br/></td></tr><tr><td>Margherita-epaisse<br/>Romaine-epaisse<br/>Cabri-epaisse<br/>Forestiere-epaisse<br/></td></tr></table>>];
+3 [shape=none,label=<<table border="0" cellborder="1" cellspacing="0" port="p"><tr><td>Concept_Prix-Pate_4</td></tr><tr><td><br/></td></tr><tr><td>Spicy-hot-one-cheezy-fun<br/></td></tr></table>>];
+9 [shape=none,label=<<table border="0" cellborder="1" cellspacing="0" port="p"><tr><td>Concept_Prix-Pate_6</td></tr><tr><td><br/></td></tr><tr><td>Roamaine-fine<br/>Cabri-fine<br/>Forestiere-fine<br/></td></tr></table>>];
+11 [shape=none,label=<<table border="0" cellborder="1" cellspacing="0" port="p"><tr><td>Concept_Prix-Pate_7</td></tr><tr><td>inf12<br/></td></tr><tr><td><br/></td></tr></table>>];
+12 [shape=none,label=<<table border="0" cellborder="1" cellspacing="0" port="p"><tr><td>Concept_Prix-Pate_9</td></tr><tr><td><br/></td></tr><tr><td>Queen-fine<br/>Spicy-hot-one-fine<br/>Hawaienne-fine<br/>Vegetarienne-fine<br/>Orientale-fine<br/>Pepperoni-lovers-fine<br/>Samourai-fine<br/></td></tr></table>>];
+15 [shape=none,label=<<table border="0" cellborder="1" cellspacing="0" port="p"><tr><td>Concept_Prix-Pate_8</td></tr><tr><td><br/></td></tr><tr><td>Queen-epaisse<br/>Spicy-hot-one-epaisse<br/>Hawaienne-epaisse<br/>Vegetarienne-epaisse<br/>Orientale-epaisse<br/>Pepperoni-lovers-epaisse<br/>Samourai-epaisse<br/></td></tr></table>>];
+13 [shape=none,label=<<table border="0" cellborder="1" cellspacing="0" port="p"><tr><td>Concept_Prix-Pate_10</td></tr><tr><td>inf14<br/></td></tr><tr><td><br/></td></tr></table>>];
+18 [shape=none,label=<<table border="0" cellborder="1" cellspacing="0" port="p"><tr><td>Concept_Prix-Pate_12</td></tr><tr><td><br/></td></tr><tr><td>4fromages-epaisse<br/>Kasbah-epaisse<br/>Provencale-epaisse<br/>Louisiane-epaisse<br/>Raclette-epaisse<br/>TexaneBBQ-epaisse<br/>Supreme-epaisse<br/>Montagnarde-epaisse<br/>Chevre-miel-epaisse<br/>Western-classic-epaisse<br/>Campagnarde-epaisse<br/>BPM-epaisse<br/></td></tr></table>>];
+7 [shape=none,label=<<table border="0" cellborder="1" cellspacing="0" port="p"><tr><td>Concept_Prix-Pate_11</td></tr><tr><td>bouchees fromage<br/></td></tr><tr><td>Kasbah-cheezy-fun<br/>Nordique-cheezy-fun<br/>Mafia-blues-cheezy-fun<br/>Romaine-cheezy-fun<br/>Hawaienne-cheezy-fun<br/>Vegetarienne-cheezy-fun<br/>Provencale-cheezy-fun<br/>Louisiane-cheezy-fun<br/>Raclette-cheezy-fun<br/>TexaneBBQ-cheezy-fun<br/>Cabri-cheezy-fun<br/>Orientale-cheezy-fun<br/>Pepperoni-lovers-cheezy-fun<br/>Supreme-cheezy-fun<br/>Montagnarde-cheezy-fun<br/>Chevre-miel-cheezy-fun<br/>Forestiere-cheezy-fun<br/>Samourai-cheezy-fun<br/>Western-classic-cheezy-fun<br/>Campagnarde-cheezy-fun<br/>BPM-cheezy-fun<br/></td></tr></table>>];
+14 [shape=none,label=<<table border="0" cellborder="1" cellspacing="0" port="p"><tr><td>Concept_Prix-Pate_14</td></tr><tr><td><br/></td></tr><tr><td>4fromages-fine<br/>Kasbah-fine<br/>Nordique-fine<br/>Mafia-blues-fine<br/>Provencale-fine<br/>Louisiane-fine<br/>Raclette-fine<br/>TexaneBBQ-fine<br/>Supreme-fine<br/>Montagnarde-fine<br/>Chevre-miel-fine<br/>Western-classic-fine<br/>Campagnarde-fine<br/>BPM-fine<br/></td></tr></table>>];
+4 [shape=none,label=<<table border="0" cellborder="1" cellspacing="0" port="p"><tr><td>Concept_Prix-Pate_13</td></tr><tr><td><br/></td></tr><tr><td>Queen-cheezy<br/>Spicy-hot-one-cheezy<br/>4fromage-cheezy<br/>Kasbah-cheezy<br/>Nordique-cheezy<br/>Mafia-blues-cheezy<br/>Romaine-cheezy<br/>Hawaienne-cheezy<br/>Vegetarienne-cheezy<br/>Provencale-cheezy<br/>Louisiane-cheezy<br/>Raclette-cheezy<br/>TexaneBBQ-cheezy<br/>Cabri-cheezy<br/>Orientale-cheezy<br/>Pepperoni-lovers-cheezy<br/>Supreme-cheezy<br/>Montagnarde-cheezy<br/>Chevre-miel-cheezy<br/>Forestiere-cheezy<br/>Samourai-cheezy<br/>Western-classic-cheezy<br/>Campagnarde-cheezy<br/>BPM-cheezy<br/></td></tr></table>>];
+21 [shape=none,label=<<table border="0" cellborder="1" cellspacing="0" port="p"><tr><td>Concept_Prix-Pate_15</td></tr><tr><td><br/></td></tr><tr><td>Nordique-epaisse<br/>Mafia-blues-epaisse<br/></td></tr></table>>];
+5 [shape=none,label=<<table border="0" cellborder="1" cellspacing="0" port="p"><tr><td>Concept_Prix-Pate_16</td></tr><tr><td>fromage<br/></td></tr><tr><td><br/></td></tr></table>>];
+16 [shape=none,label=<<table border="0" cellborder="1" cellspacing="0" port="p"><tr><td>Concept_Prix-Pate_17</td></tr><tr><td>inf16<br/></td></tr><tr><td><br/></td></tr></table>>];
+19 [shape=none,label=<<table border="0" cellborder="1" cellspacing="0" port="p"><tr><td>Concept_Prix-Pate_18</td></tr><tr><td>inf18<br/></td></tr><tr><td><br/></td></tr></table>>];
+1 [shape=none,label=<<table border="0" cellborder="1" cellspacing="0" port="p"><tr><td>Concept_Prix-Pate_20</td></tr><tr><td>Fine<br/></td></tr><tr><td><br/></td></tr></table>>];
+2 [shape=none,label=<<table border="0" cellborder="1" cellspacing="0" port="p"><tr><td>Concept_Prix-Pate_19</td></tr><tr><td>epaisse<br/></td></tr><tr><td><br/></td></tr></table>>];
+22 [shape=none,label=<<table border="0" cellborder="1" cellspacing="0" port="p"><tr><td>Concept_Prix-Pate_21</td></tr><tr><td>inf20<br/></td></tr><tr><td><br/></td></tr></table>>];
+23 [shape=none,label=<<table border="0" cellborder="1" cellspacing="0" port="p"><tr><td>Concept_Prix-Pate_22</td></tr><tr><td>inf22<br/></td></tr><tr><td><br/></td></tr></table>>];
+	20:p -> 6:p
+	6:p -> 3:p
+	8:p -> 9:p
+	10:p -> 11:p
+	9:p -> 11:p
+	9:p -> 12:p
+	10:p -> 15:p
+	11:p -> 13:p
+	12:p -> 13:p
+	15:p -> 18:p
+	17:p -> 18:p
+	6:p -> 7:p
+	12:p -> 14:p
+	17:p -> 4:p
+	18:p -> 21:p
+	3:p -> 5:p
+	4:p -> 5:p
+	13:p -> 16:p
+	14:p -> 16:p
+	15:p -> 16:p
+	16:p -> 19:p
+	18:p -> 19:p
+	14:p -> 1:p
+	3:p -> 1:p
+	7:p -> 1:p
+	4:p -> 2:p
+	21:p -> 2:p
+	19:p -> 22:p
+	21:p -> 22:p
+	20:p -> 22:p
+	7:p -> 23:p
+	22:p -> 23:p
+	2:p -> 23:p
+}

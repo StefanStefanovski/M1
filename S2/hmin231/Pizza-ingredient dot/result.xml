@@ -1,0 +1,1940 @@
+<RCAExplore_Document>
+	<Step nb="0">
+		<Lattice numberObj="25" numberAtt="30" numberCpt="43" >
+			<Config algo="ares">
+			</Config>
+			<Name>Pizza</Name>
+			<Object>Margherita</Object>
+			<Object>Queen</Object>
+			<Object>Spicy Hot One</Object>
+			<Object>4 Fromages</Object>
+			<Object>Kasbah</Object>
+			<Object>Nordique</Object>
+			<Object>Mafia Blues</Object>
+			<Object>Romaine</Object>
+			<Object>Hawainne Jambon</Object>
+			<Object>Vegetarienne</Object>
+			<Object>Provencale</Object>
+			<Object>Louisiane</Object>
+			<Object>Raclette</Object>
+			<Object>Texanne BBQ</Object>
+			<Object>Cabri</Object>
+			<Object>Orientale</Object>
+			<Object>Pepperoni Lovers</Object>
+			<Object>Supreme</Object>
+			<Object>Montagnarde</Object>
+			<Object>Chevre Miel</Object>
+			<Object>Forestiere</Object>
+			<Object>Samourai</Object>
+			<Object>Western Classic</Object>
+			<Object>Campagnarde</Object>
+			<Object>BPM</Object>
+			<Attribute>Base Tomate</Attribute>
+			<Attribute>Base Creme</Attribute>
+			<Attribute>Sauce BBQ</Attribute>
+			<Attribute>Sauce Samourai</Attribute>
+			<Attribute>Sauce Kebab</Attribute>
+			<Attribute>Miel</Attribute>
+			<Attribute>Fromage</Attribute>
+			<Attribute>Emmental</Attribute>
+			<Attribute>Mozzarella</Attribute>
+			<Attribute>Fourme Ambert AOP</Attribute>
+			<Attribute>Ch�vre</Attribute>
+			<Attribute>Raclette</Attribute>
+			<Attribute>Viande</Attribute>
+			<Attribute>Porc</Attribute>
+			<Attribute>Boeuf</Attribute>
+			<Attribute>Poulet</Attribute>
+			<Attribute>Merguez</Attribute>
+			<Attribute>Poisson</Attribute>
+			<Attribute>Saumon</Attribute>
+			<Attribute>Thon</Attribute>
+			<Attribute>Legumes</Attribute>
+			<Attribute>Champignon</Attribute>
+			<Attribute>Poivron</Attribute>
+			<Attribute>Oignon</Attribute>
+			<Attribute>Piment</Attribute>
+			<Attribute>Pomme De Terre</Attribute>
+			<Attribute>Tomate</Attribute>
+			<Attribute>Olive</Attribute>
+			<Attribute>Persil</Attribute>
+			<Attribute>Ananas</Attribute>
+			<Concept>
+				<ID>Concept_Pizza_14</ID>
+				<Extent>
+					<Object_Ref>Mafia Blues</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Persil</Attribute_Ref>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Poulet</Attribute_Ref>
+					<Attribute_Ref>Champignon</Attribute_Ref>
+					<Attribute_Ref>Base Creme</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Emmental</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_30</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_23</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_37</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_33</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_17</ID>
+				<Extent>
+					<Object_Ref>4 Fromages</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Base Tomate</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fourme Ambert AOP</Attribute_Ref>
+					<Attribute_Ref>Emmental</Attribute_Ref>
+					<Attribute_Ref>Ch�vre</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_23</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_22</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_6</ID>
+				<Extent>
+					<Object_Ref>Supreme</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Base Tomate</Attribute_Ref>
+					<Attribute_Ref>Champignon</Attribute_Ref>
+					<Attribute_Ref>Porc</Attribute_Ref>
+					<Attribute_Ref>Oignon</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+					<Attribute_Ref>Poivron</Attribute_Ref>
+					<Attribute_Ref>Boeuf</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_31</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_24</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_26</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_0</ID>
+				<Extent>
+					<Object_Ref>BPM</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Poulet</Attribute_Ref>
+					<Attribute_Ref>Sauce BBQ</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Merguez</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+					<Attribute_Ref>Boeuf</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_30</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_28</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_31</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_25</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_10</ID>
+				<Extent>
+					<Object_Ref>Louisiane</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Poulet</Attribute_Ref>
+					<Attribute_Ref>Sauce BBQ</Attribute_Ref>
+					<Attribute_Ref>Base Tomate</Attribute_Ref>
+					<Attribute_Ref>Champignon</Attribute_Ref>
+					<Attribute_Ref>Oignon</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+					<Attribute_Ref>Poivron</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_30</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_28</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_26</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_15</ID>
+				<Extent>
+					<Object_Ref>Nordique</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Poisson</Attribute_Ref>
+					<Attribute_Ref>Base Creme</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Saumon</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_21</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_33</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_11</ID>
+				<Extent>
+					<Object_Ref>Provencale</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Olive</Attribute_Ref>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Poisson</Attribute_Ref>
+					<Attribute_Ref>Base Tomate</Attribute_Ref>
+					<Attribute_Ref>Thon</Attribute_Ref>
+					<Attribute_Ref>Tomate</Attribute_Ref>
+					<Attribute_Ref>Oignon</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_21</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_29</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_38</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_5</ID>
+				<Extent>
+					<Object_Ref>Montagnarde</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Champignon</Attribute_Ref>
+					<Attribute_Ref>Base Creme</Attribute_Ref>
+					<Attribute_Ref>Raclette</Attribute_Ref>
+					<Attribute_Ref>Porc</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_20</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_37</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_8</ID>
+				<Extent>
+					<Object_Ref>Texanne BBQ</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Sauce BBQ</Attribute_Ref>
+					<Attribute_Ref>Champignon</Attribute_Ref>
+					<Attribute_Ref>Porc</Attribute_Ref>
+					<Attribute_Ref>Oignon</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+					<Attribute_Ref>Boeuf</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_36</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_28</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_37</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_35</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_31</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_7</ID>
+				<Extent>
+					<Object_Ref>Orientale</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Base Tomate</Attribute_Ref>
+					<Attribute_Ref>Champignon</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Merguez</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_25</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_34</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_1</ID>
+				<Extent>
+					<Object_Ref>Campagnarde</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Champignon</Attribute_Ref>
+					<Attribute_Ref>Base Creme</Attribute_Ref>
+					<Attribute_Ref>Porc</Attribute_Ref>
+					<Attribute_Ref>Oignon</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_36</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_37</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_35</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_33</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_18</ID>
+				<Extent>
+					<Object_Ref>Spicy Hot One</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Base Tomate</Attribute_Ref>
+					<Attribute_Ref>Tomate</Attribute_Ref>
+					<Attribute_Ref>Oignon</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Piment</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+					<Attribute_Ref>Boeuf</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_29</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_38</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_31</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_9</ID>
+				<Extent>
+					<Object_Ref>Raclette</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Base Creme</Attribute_Ref>
+					<Attribute_Ref>Pomme De Terre</Attribute_Ref>
+					<Attribute_Ref>Porc</Attribute_Ref>
+					<Attribute_Ref>Raclette</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_19</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_20</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_2</ID>
+				<Extent>
+					<Object_Ref>Western Classic</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Sauce BBQ</Attribute_Ref>
+					<Attribute_Ref>Pomme De Terre</Attribute_Ref>
+					<Attribute_Ref>Porc</Attribute_Ref>
+					<Attribute_Ref>Oignon</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+					<Attribute_Ref>Boeuf</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_19</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_28</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_35</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_31</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_3</ID>
+				<Extent>
+					<Object_Ref>Samourai</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Poulet</Attribute_Ref>
+					<Attribute_Ref>Base Tomate</Attribute_Ref>
+					<Attribute_Ref>Sauce Samourai</Attribute_Ref>
+					<Attribute_Ref>Oignon</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Merguez</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_30</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_35</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_38</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_25</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_12</ID>
+				<Extent>
+					<Object_Ref>Vegetarienne</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Base Tomate</Attribute_Ref>
+					<Attribute_Ref>Champignon</Attribute_Ref>
+					<Attribute_Ref>Tomate</Attribute_Ref>
+					<Attribute_Ref>Oignon</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Poivron</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_26</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_29</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_16</ID>
+				<Extent>
+					<Object_Ref>Kasbah</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Poulet</Attribute_Ref>
+					<Attribute_Ref>Base Tomate</Attribute_Ref>
+					<Attribute_Ref>Tomate</Attribute_Ref>
+					<Attribute_Ref>Oignon</Attribute_Ref>
+					<Attribute_Ref>Sauce Kebab</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_30</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_29</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_4</ID>
+				<Extent>
+					<Object_Ref>Chevre Miel</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Base Creme</Attribute_Ref>
+					<Attribute_Ref>Miel</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Ch�vre</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_33</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_27</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_23</ID>
+				<Extent>
+					<Object_Ref>4 Fromages</Object_Ref>
+					<Object_Ref>Mafia Blues</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Emmental</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_42</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_22</ID>
+				<Extent>
+					<Object_Ref>4 Fromages</Object_Ref>
+					<Object_Ref>Cabri</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Base Tomate</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Ch�vre</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_38</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_27</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_20</ID>
+				<Extent>
+					<Object_Ref>Raclette</Object_Ref>
+					<Object_Ref>Montagnarde</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Base Creme</Attribute_Ref>
+					<Attribute_Ref>Raclette</Attribute_Ref>
+					<Attribute_Ref>Porc</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_36</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_33</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_39</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_21</ID>
+				<Extent>
+					<Object_Ref>Nordique</Object_Ref>
+					<Object_Ref>Provencale</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Poisson</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_42</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_24</ID>
+				<Extent>
+					<Object_Ref>Queen</Object_Ref>
+					<Object_Ref>Supreme</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Base Tomate</Attribute_Ref>
+					<Attribute_Ref>Champignon</Attribute_Ref>
+					<Attribute_Ref>Porc</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_32</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_34</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_19</ID>
+				<Extent>
+					<Object_Ref>Raclette</Object_Ref>
+					<Object_Ref>Western Classic</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Pomme De Terre</Attribute_Ref>
+					<Attribute_Ref>Porc</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_36</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_39</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_27</ID>
+				<Extent>
+					<Object_Ref>4 Fromages</Object_Ref>
+					<Object_Ref>Cabri</Object_Ref>
+					<Object_Ref>Chevre Miel</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Ch�vre</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_42</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_25</ID>
+				<Extent>
+					<Object_Ref>Orientale</Object_Ref>
+					<Object_Ref>Samourai</Object_Ref>
+					<Object_Ref>BPM</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Merguez</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_41</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_42</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_26</ID>
+				<Extent>
+					<Object_Ref>Vegetarienne</Object_Ref>
+					<Object_Ref>Louisiane</Object_Ref>
+					<Object_Ref>Supreme</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Base Tomate</Attribute_Ref>
+					<Attribute_Ref>Champignon</Attribute_Ref>
+					<Attribute_Ref>Oignon</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Poivron</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_35</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_34</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_28</ID>
+				<Extent>
+					<Object_Ref>Louisiane</Object_Ref>
+					<Object_Ref>Texanne BBQ</Object_Ref>
+					<Object_Ref>Western Classic</Object_Ref>
+					<Object_Ref>BPM</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Sauce BBQ</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_41</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_42</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_29</ID>
+				<Extent>
+					<Object_Ref>Spicy Hot One</Object_Ref>
+					<Object_Ref>Kasbah</Object_Ref>
+					<Object_Ref>Vegetarienne</Object_Ref>
+					<Object_Ref>Provencale</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Base Tomate</Attribute_Ref>
+					<Attribute_Ref>Tomate</Attribute_Ref>
+					<Attribute_Ref>Oignon</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_35</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_40</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_32</ID>
+				<Extent>
+					<Object_Ref>Queen</Object_Ref>
+					<Object_Ref>Romaine</Object_Ref>
+					<Object_Ref>Hawainne Jambon</Object_Ref>
+					<Object_Ref>Pepperoni Lovers</Object_Ref>
+					<Object_Ref>Supreme</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Base Tomate</Attribute_Ref>
+					<Attribute_Ref>Porc</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_38</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_36</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_31</ID>
+				<Extent>
+					<Object_Ref>Spicy Hot One</Object_Ref>
+					<Object_Ref>Texanne BBQ</Object_Ref>
+					<Object_Ref>Supreme</Object_Ref>
+					<Object_Ref>Western Classic</Object_Ref>
+					<Object_Ref>BPM</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+					<Attribute_Ref>Boeuf</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_41</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_42</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_30</ID>
+				<Extent>
+					<Object_Ref>Kasbah</Object_Ref>
+					<Object_Ref>Mafia Blues</Object_Ref>
+					<Object_Ref>Louisiane</Object_Ref>
+					<Object_Ref>Samourai</Object_Ref>
+					<Object_Ref>BPM</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Poulet</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_41</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_33</ID>
+				<Extent>
+					<Object_Ref>Nordique</Object_Ref>
+					<Object_Ref>Mafia Blues</Object_Ref>
+					<Object_Ref>Raclette</Object_Ref>
+					<Object_Ref>Montagnarde</Object_Ref>
+					<Object_Ref>Chevre Miel</Object_Ref>
+					<Object_Ref>Campagnarde</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Base Creme</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_42</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_34</ID>
+				<Extent>
+					<Object_Ref>Queen</Object_Ref>
+					<Object_Ref>Vegetarienne</Object_Ref>
+					<Object_Ref>Louisiane</Object_Ref>
+					<Object_Ref>Orientale</Object_Ref>
+					<Object_Ref>Supreme</Object_Ref>
+					<Object_Ref>Forestiere</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Base Tomate</Attribute_Ref>
+					<Attribute_Ref>Champignon</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_38</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_37</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_36</ID>
+				<Extent>
+					<Object_Ref>Queen</Object_Ref>
+					<Object_Ref>Romaine</Object_Ref>
+					<Object_Ref>Hawainne Jambon</Object_Ref>
+					<Object_Ref>Raclette</Object_Ref>
+					<Object_Ref>Texanne BBQ</Object_Ref>
+					<Object_Ref>Pepperoni Lovers</Object_Ref>
+					<Object_Ref>Supreme</Object_Ref>
+					<Object_Ref>Montagnarde</Object_Ref>
+					<Object_Ref>Western Classic</Object_Ref>
+					<Object_Ref>Campagnarde</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Porc</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_41</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_42</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_37</ID>
+				<Extent>
+					<Object_Ref>Queen</Object_Ref>
+					<Object_Ref>Mafia Blues</Object_Ref>
+					<Object_Ref>Vegetarienne</Object_Ref>
+					<Object_Ref>Louisiane</Object_Ref>
+					<Object_Ref>Texanne BBQ</Object_Ref>
+					<Object_Ref>Orientale</Object_Ref>
+					<Object_Ref>Supreme</Object_Ref>
+					<Object_Ref>Montagnarde</Object_Ref>
+					<Object_Ref>Forestiere</Object_Ref>
+					<Object_Ref>Campagnarde</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Champignon</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_42</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_39</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_35</ID>
+				<Extent>
+					<Object_Ref>Spicy Hot One</Object_Ref>
+					<Object_Ref>Kasbah</Object_Ref>
+					<Object_Ref>Vegetarienne</Object_Ref>
+					<Object_Ref>Provencale</Object_Ref>
+					<Object_Ref>Louisiane</Object_Ref>
+					<Object_Ref>Texanne BBQ</Object_Ref>
+					<Object_Ref>Supreme</Object_Ref>
+					<Object_Ref>Samourai</Object_Ref>
+					<Object_Ref>Western Classic</Object_Ref>
+					<Object_Ref>Campagnarde</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Oignon</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_39</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_38</ID>
+				<Extent>
+					<Object_Ref>Margherita</Object_Ref>
+					<Object_Ref>Queen</Object_Ref>
+					<Object_Ref>Spicy Hot One</Object_Ref>
+					<Object_Ref>4 Fromages</Object_Ref>
+					<Object_Ref>Romaine</Object_Ref>
+					<Object_Ref>Hawainne Jambon</Object_Ref>
+					<Object_Ref>Vegetarienne</Object_Ref>
+					<Object_Ref>Provencale</Object_Ref>
+					<Object_Ref>Louisiane</Object_Ref>
+					<Object_Ref>Cabri</Object_Ref>
+					<Object_Ref>Orientale</Object_Ref>
+					<Object_Ref>Pepperoni Lovers</Object_Ref>
+					<Object_Ref>Supreme</Object_Ref>
+					<Object_Ref>Forestiere</Object_Ref>
+					<Object_Ref>Samourai</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Base Tomate</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_42</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_40</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_40</ID>
+				<Extent>
+					<Object_Ref>Margherita</Object_Ref>
+					<Object_Ref>Queen</Object_Ref>
+					<Object_Ref>Spicy Hot One</Object_Ref>
+					<Object_Ref>4 Fromages</Object_Ref>
+					<Object_Ref>Kasbah</Object_Ref>
+					<Object_Ref>Romaine</Object_Ref>
+					<Object_Ref>Hawainne Jambon</Object_Ref>
+					<Object_Ref>Vegetarienne</Object_Ref>
+					<Object_Ref>Provencale</Object_Ref>
+					<Object_Ref>Louisiane</Object_Ref>
+					<Object_Ref>Cabri</Object_Ref>
+					<Object_Ref>Orientale</Object_Ref>
+					<Object_Ref>Pepperoni Lovers</Object_Ref>
+					<Object_Ref>Supreme</Object_Ref>
+					<Object_Ref>Forestiere</Object_Ref>
+					<Object_Ref>Samourai</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Base Tomate</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_39</ID>
+				<Extent>
+					<Object_Ref>Queen</Object_Ref>
+					<Object_Ref>Spicy Hot One</Object_Ref>
+					<Object_Ref>Kasbah</Object_Ref>
+					<Object_Ref>Mafia Blues</Object_Ref>
+					<Object_Ref>Vegetarienne</Object_Ref>
+					<Object_Ref>Provencale</Object_Ref>
+					<Object_Ref>Louisiane</Object_Ref>
+					<Object_Ref>Raclette</Object_Ref>
+					<Object_Ref>Texanne BBQ</Object_Ref>
+					<Object_Ref>Orientale</Object_Ref>
+					<Object_Ref>Supreme</Object_Ref>
+					<Object_Ref>Montagnarde</Object_Ref>
+					<Object_Ref>Forestiere</Object_Ref>
+					<Object_Ref>Samourai</Object_Ref>
+					<Object_Ref>Western Classic</Object_Ref>
+					<Object_Ref>Campagnarde</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_41</ID>
+				<Extent>
+					<Object_Ref>Queen</Object_Ref>
+					<Object_Ref>Spicy Hot One</Object_Ref>
+					<Object_Ref>Kasbah</Object_Ref>
+					<Object_Ref>Mafia Blues</Object_Ref>
+					<Object_Ref>Romaine</Object_Ref>
+					<Object_Ref>Hawainne Jambon</Object_Ref>
+					<Object_Ref>Louisiane</Object_Ref>
+					<Object_Ref>Raclette</Object_Ref>
+					<Object_Ref>Texanne BBQ</Object_Ref>
+					<Object_Ref>Orientale</Object_Ref>
+					<Object_Ref>Pepperoni Lovers</Object_Ref>
+					<Object_Ref>Supreme</Object_Ref>
+					<Object_Ref>Montagnarde</Object_Ref>
+					<Object_Ref>Samourai</Object_Ref>
+					<Object_Ref>Western Classic</Object_Ref>
+					<Object_Ref>Campagnarde</Object_Ref>
+					<Object_Ref>BPM</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Viande</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_42</ID>
+				<Extent>
+					<Object_Ref>Margherita</Object_Ref>
+					<Object_Ref>Queen</Object_Ref>
+					<Object_Ref>Spicy Hot One</Object_Ref>
+					<Object_Ref>4 Fromages</Object_Ref>
+					<Object_Ref>Nordique</Object_Ref>
+					<Object_Ref>Mafia Blues</Object_Ref>
+					<Object_Ref>Romaine</Object_Ref>
+					<Object_Ref>Hawainne Jambon</Object_Ref>
+					<Object_Ref>Vegetarienne</Object_Ref>
+					<Object_Ref>Provencale</Object_Ref>
+					<Object_Ref>Louisiane</Object_Ref>
+					<Object_Ref>Raclette</Object_Ref>
+					<Object_Ref>Texanne BBQ</Object_Ref>
+					<Object_Ref>Cabri</Object_Ref>
+					<Object_Ref>Orientale</Object_Ref>
+					<Object_Ref>Pepperoni Lovers</Object_Ref>
+					<Object_Ref>Supreme</Object_Ref>
+					<Object_Ref>Montagnarde</Object_Ref>
+					<Object_Ref>Chevre Miel</Object_Ref>
+					<Object_Ref>Forestiere</Object_Ref>
+					<Object_Ref>Samourai</Object_Ref>
+					<Object_Ref>Western Classic</Object_Ref>
+					<Object_Ref>Campagnarde</Object_Ref>
+					<Object_Ref>BPM</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_13</ID>
+				<Extent>
+					<Object_Ref>Hawainne Jambon</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Base Tomate</Attribute_Ref>
+					<Attribute_Ref>Porc</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Ananas</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_32</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+		</Lattice>
+	</Step >
+	<Step nb="1">
+		<Lattice numberObj="25" numberAtt="30" numberCpt="43" >
+			<Config algo="ares">
+			</Config>
+			<Name>Pizza</Name>
+			<Object>Margherita</Object>
+			<Object>Queen</Object>
+			<Object>Spicy Hot One</Object>
+			<Object>4 Fromages</Object>
+			<Object>Kasbah</Object>
+			<Object>Nordique</Object>
+			<Object>Mafia Blues</Object>
+			<Object>Romaine</Object>
+			<Object>Hawainne Jambon</Object>
+			<Object>Vegetarienne</Object>
+			<Object>Provencale</Object>
+			<Object>Louisiane</Object>
+			<Object>Raclette</Object>
+			<Object>Texanne BBQ</Object>
+			<Object>Cabri</Object>
+			<Object>Orientale</Object>
+			<Object>Pepperoni Lovers</Object>
+			<Object>Supreme</Object>
+			<Object>Montagnarde</Object>
+			<Object>Chevre Miel</Object>
+			<Object>Forestiere</Object>
+			<Object>Samourai</Object>
+			<Object>Western Classic</Object>
+			<Object>Campagnarde</Object>
+			<Object>BPM</Object>
+			<Attribute>Base Tomate</Attribute>
+			<Attribute>Base Creme</Attribute>
+			<Attribute>Sauce BBQ</Attribute>
+			<Attribute>Sauce Samourai</Attribute>
+			<Attribute>Sauce Kebab</Attribute>
+			<Attribute>Miel</Attribute>
+			<Attribute>Fromage</Attribute>
+			<Attribute>Emmental</Attribute>
+			<Attribute>Mozzarella</Attribute>
+			<Attribute>Fourme Ambert AOP</Attribute>
+			<Attribute>Ch�vre</Attribute>
+			<Attribute>Raclette</Attribute>
+			<Attribute>Viande</Attribute>
+			<Attribute>Porc</Attribute>
+			<Attribute>Boeuf</Attribute>
+			<Attribute>Poulet</Attribute>
+			<Attribute>Merguez</Attribute>
+			<Attribute>Poisson</Attribute>
+			<Attribute>Saumon</Attribute>
+			<Attribute>Thon</Attribute>
+			<Attribute>Legumes</Attribute>
+			<Attribute>Champignon</Attribute>
+			<Attribute>Poivron</Attribute>
+			<Attribute>Oignon</Attribute>
+			<Attribute>Piment</Attribute>
+			<Attribute>Pomme De Terre</Attribute>
+			<Attribute>Tomate</Attribute>
+			<Attribute>Olive</Attribute>
+			<Attribute>Persil</Attribute>
+			<Attribute>Ananas</Attribute>
+			<Concept>
+				<ID>Concept_Pizza_9</ID>
+				<Extent>
+					<Object_Ref>Raclette</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Base Creme</Attribute_Ref>
+					<Attribute_Ref>Pomme De Terre</Attribute_Ref>
+					<Attribute_Ref>Porc</Attribute_Ref>
+					<Attribute_Ref>Raclette</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_19</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_20</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_2</ID>
+				<Extent>
+					<Object_Ref>Western Classic</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Sauce BBQ</Attribute_Ref>
+					<Attribute_Ref>Pomme De Terre</Attribute_Ref>
+					<Attribute_Ref>Porc</Attribute_Ref>
+					<Attribute_Ref>Oignon</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+					<Attribute_Ref>Boeuf</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_19</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_28</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_35</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_31</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_12</ID>
+				<Extent>
+					<Object_Ref>Vegetarienne</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Base Tomate</Attribute_Ref>
+					<Attribute_Ref>Champignon</Attribute_Ref>
+					<Attribute_Ref>Tomate</Attribute_Ref>
+					<Attribute_Ref>Oignon</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Poivron</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_26</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_29</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_10</ID>
+				<Extent>
+					<Object_Ref>Louisiane</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Poulet</Attribute_Ref>
+					<Attribute_Ref>Sauce BBQ</Attribute_Ref>
+					<Attribute_Ref>Base Tomate</Attribute_Ref>
+					<Attribute_Ref>Champignon</Attribute_Ref>
+					<Attribute_Ref>Oignon</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+					<Attribute_Ref>Poivron</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_30</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_28</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_26</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_3</ID>
+				<Extent>
+					<Object_Ref>Samourai</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Poulet</Attribute_Ref>
+					<Attribute_Ref>Base Tomate</Attribute_Ref>
+					<Attribute_Ref>Sauce Samourai</Attribute_Ref>
+					<Attribute_Ref>Oignon</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Merguez</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_30</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_35</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_38</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_25</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_16</ID>
+				<Extent>
+					<Object_Ref>Kasbah</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Poulet</Attribute_Ref>
+					<Attribute_Ref>Base Tomate</Attribute_Ref>
+					<Attribute_Ref>Tomate</Attribute_Ref>
+					<Attribute_Ref>Oignon</Attribute_Ref>
+					<Attribute_Ref>Sauce Kebab</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_30</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_29</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_4</ID>
+				<Extent>
+					<Object_Ref>Chevre Miel</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Base Creme</Attribute_Ref>
+					<Attribute_Ref>Miel</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Ch�vre</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_33</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_27</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_14</ID>
+				<Extent>
+					<Object_Ref>Mafia Blues</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Persil</Attribute_Ref>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Poulet</Attribute_Ref>
+					<Attribute_Ref>Champignon</Attribute_Ref>
+					<Attribute_Ref>Base Creme</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Emmental</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_30</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_23</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_37</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_33</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_17</ID>
+				<Extent>
+					<Object_Ref>4 Fromages</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Base Tomate</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fourme Ambert AOP</Attribute_Ref>
+					<Attribute_Ref>Emmental</Attribute_Ref>
+					<Attribute_Ref>Ch�vre</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_23</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_22</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_6</ID>
+				<Extent>
+					<Object_Ref>Supreme</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Base Tomate</Attribute_Ref>
+					<Attribute_Ref>Champignon</Attribute_Ref>
+					<Attribute_Ref>Porc</Attribute_Ref>
+					<Attribute_Ref>Oignon</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+					<Attribute_Ref>Poivron</Attribute_Ref>
+					<Attribute_Ref>Boeuf</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_31</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_24</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_26</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_0</ID>
+				<Extent>
+					<Object_Ref>BPM</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Poulet</Attribute_Ref>
+					<Attribute_Ref>Sauce BBQ</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Merguez</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+					<Attribute_Ref>Boeuf</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_30</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_28</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_31</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_25</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_15</ID>
+				<Extent>
+					<Object_Ref>Nordique</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Poisson</Attribute_Ref>
+					<Attribute_Ref>Base Creme</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Saumon</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_21</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_33</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_11</ID>
+				<Extent>
+					<Object_Ref>Provencale</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Olive</Attribute_Ref>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Poisson</Attribute_Ref>
+					<Attribute_Ref>Base Tomate</Attribute_Ref>
+					<Attribute_Ref>Thon</Attribute_Ref>
+					<Attribute_Ref>Tomate</Attribute_Ref>
+					<Attribute_Ref>Oignon</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_21</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_29</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_38</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_5</ID>
+				<Extent>
+					<Object_Ref>Montagnarde</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Champignon</Attribute_Ref>
+					<Attribute_Ref>Base Creme</Attribute_Ref>
+					<Attribute_Ref>Raclette</Attribute_Ref>
+					<Attribute_Ref>Porc</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_20</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_37</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_8</ID>
+				<Extent>
+					<Object_Ref>Texanne BBQ</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Sauce BBQ</Attribute_Ref>
+					<Attribute_Ref>Champignon</Attribute_Ref>
+					<Attribute_Ref>Porc</Attribute_Ref>
+					<Attribute_Ref>Oignon</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+					<Attribute_Ref>Boeuf</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_36</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_28</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_37</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_35</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_31</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_7</ID>
+				<Extent>
+					<Object_Ref>Orientale</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Base Tomate</Attribute_Ref>
+					<Attribute_Ref>Champignon</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Merguez</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_25</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_34</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_1</ID>
+				<Extent>
+					<Object_Ref>Campagnarde</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Champignon</Attribute_Ref>
+					<Attribute_Ref>Base Creme</Attribute_Ref>
+					<Attribute_Ref>Porc</Attribute_Ref>
+					<Attribute_Ref>Oignon</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_36</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_37</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_35</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_33</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_18</ID>
+				<Extent>
+					<Object_Ref>Spicy Hot One</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Base Tomate</Attribute_Ref>
+					<Attribute_Ref>Tomate</Attribute_Ref>
+					<Attribute_Ref>Oignon</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Piment</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+					<Attribute_Ref>Boeuf</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_29</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_38</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_31</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_19</ID>
+				<Extent>
+					<Object_Ref>Raclette</Object_Ref>
+					<Object_Ref>Western Classic</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Pomme De Terre</Attribute_Ref>
+					<Attribute_Ref>Porc</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_36</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_39</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_23</ID>
+				<Extent>
+					<Object_Ref>4 Fromages</Object_Ref>
+					<Object_Ref>Mafia Blues</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Emmental</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_42</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_22</ID>
+				<Extent>
+					<Object_Ref>4 Fromages</Object_Ref>
+					<Object_Ref>Cabri</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Base Tomate</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Ch�vre</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_38</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_27</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_20</ID>
+				<Extent>
+					<Object_Ref>Raclette</Object_Ref>
+					<Object_Ref>Montagnarde</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Base Creme</Attribute_Ref>
+					<Attribute_Ref>Raclette</Attribute_Ref>
+					<Attribute_Ref>Porc</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_36</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_33</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_39</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_21</ID>
+				<Extent>
+					<Object_Ref>Nordique</Object_Ref>
+					<Object_Ref>Provencale</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Poisson</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_42</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_24</ID>
+				<Extent>
+					<Object_Ref>Queen</Object_Ref>
+					<Object_Ref>Supreme</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Base Tomate</Attribute_Ref>
+					<Attribute_Ref>Champignon</Attribute_Ref>
+					<Attribute_Ref>Porc</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_32</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_34</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_27</ID>
+				<Extent>
+					<Object_Ref>4 Fromages</Object_Ref>
+					<Object_Ref>Cabri</Object_Ref>
+					<Object_Ref>Chevre Miel</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Ch�vre</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_42</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_25</ID>
+				<Extent>
+					<Object_Ref>Orientale</Object_Ref>
+					<Object_Ref>Samourai</Object_Ref>
+					<Object_Ref>BPM</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Merguez</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_41</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_42</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_26</ID>
+				<Extent>
+					<Object_Ref>Vegetarienne</Object_Ref>
+					<Object_Ref>Louisiane</Object_Ref>
+					<Object_Ref>Supreme</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Base Tomate</Attribute_Ref>
+					<Attribute_Ref>Champignon</Attribute_Ref>
+					<Attribute_Ref>Oignon</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Poivron</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_35</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_34</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_29</ID>
+				<Extent>
+					<Object_Ref>Spicy Hot One</Object_Ref>
+					<Object_Ref>Kasbah</Object_Ref>
+					<Object_Ref>Vegetarienne</Object_Ref>
+					<Object_Ref>Provencale</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Base Tomate</Attribute_Ref>
+					<Attribute_Ref>Tomate</Attribute_Ref>
+					<Attribute_Ref>Oignon</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_35</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_40</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_28</ID>
+				<Extent>
+					<Object_Ref>Louisiane</Object_Ref>
+					<Object_Ref>Texanne BBQ</Object_Ref>
+					<Object_Ref>Western Classic</Object_Ref>
+					<Object_Ref>BPM</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Sauce BBQ</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_41</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_42</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_32</ID>
+				<Extent>
+					<Object_Ref>Queen</Object_Ref>
+					<Object_Ref>Romaine</Object_Ref>
+					<Object_Ref>Hawainne Jambon</Object_Ref>
+					<Object_Ref>Pepperoni Lovers</Object_Ref>
+					<Object_Ref>Supreme</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Base Tomate</Attribute_Ref>
+					<Attribute_Ref>Porc</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_38</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_36</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_31</ID>
+				<Extent>
+					<Object_Ref>Spicy Hot One</Object_Ref>
+					<Object_Ref>Texanne BBQ</Object_Ref>
+					<Object_Ref>Supreme</Object_Ref>
+					<Object_Ref>Western Classic</Object_Ref>
+					<Object_Ref>BPM</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+					<Attribute_Ref>Boeuf</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_41</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_42</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_30</ID>
+				<Extent>
+					<Object_Ref>Kasbah</Object_Ref>
+					<Object_Ref>Mafia Blues</Object_Ref>
+					<Object_Ref>Louisiane</Object_Ref>
+					<Object_Ref>Samourai</Object_Ref>
+					<Object_Ref>BPM</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Poulet</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_41</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_33</ID>
+				<Extent>
+					<Object_Ref>Nordique</Object_Ref>
+					<Object_Ref>Mafia Blues</Object_Ref>
+					<Object_Ref>Raclette</Object_Ref>
+					<Object_Ref>Montagnarde</Object_Ref>
+					<Object_Ref>Chevre Miel</Object_Ref>
+					<Object_Ref>Campagnarde</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Base Creme</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_42</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_34</ID>
+				<Extent>
+					<Object_Ref>Queen</Object_Ref>
+					<Object_Ref>Vegetarienne</Object_Ref>
+					<Object_Ref>Louisiane</Object_Ref>
+					<Object_Ref>Orientale</Object_Ref>
+					<Object_Ref>Supreme</Object_Ref>
+					<Object_Ref>Forestiere</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Base Tomate</Attribute_Ref>
+					<Attribute_Ref>Champignon</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_38</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_37</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_36</ID>
+				<Extent>
+					<Object_Ref>Queen</Object_Ref>
+					<Object_Ref>Romaine</Object_Ref>
+					<Object_Ref>Hawainne Jambon</Object_Ref>
+					<Object_Ref>Raclette</Object_Ref>
+					<Object_Ref>Texanne BBQ</Object_Ref>
+					<Object_Ref>Pepperoni Lovers</Object_Ref>
+					<Object_Ref>Supreme</Object_Ref>
+					<Object_Ref>Montagnarde</Object_Ref>
+					<Object_Ref>Western Classic</Object_Ref>
+					<Object_Ref>Campagnarde</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Porc</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_41</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_42</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_37</ID>
+				<Extent>
+					<Object_Ref>Queen</Object_Ref>
+					<Object_Ref>Mafia Blues</Object_Ref>
+					<Object_Ref>Vegetarienne</Object_Ref>
+					<Object_Ref>Louisiane</Object_Ref>
+					<Object_Ref>Texanne BBQ</Object_Ref>
+					<Object_Ref>Orientale</Object_Ref>
+					<Object_Ref>Supreme</Object_Ref>
+					<Object_Ref>Montagnarde</Object_Ref>
+					<Object_Ref>Forestiere</Object_Ref>
+					<Object_Ref>Campagnarde</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Champignon</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_42</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_39</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_35</ID>
+				<Extent>
+					<Object_Ref>Spicy Hot One</Object_Ref>
+					<Object_Ref>Kasbah</Object_Ref>
+					<Object_Ref>Vegetarienne</Object_Ref>
+					<Object_Ref>Provencale</Object_Ref>
+					<Object_Ref>Louisiane</Object_Ref>
+					<Object_Ref>Texanne BBQ</Object_Ref>
+					<Object_Ref>Supreme</Object_Ref>
+					<Object_Ref>Samourai</Object_Ref>
+					<Object_Ref>Western Classic</Object_Ref>
+					<Object_Ref>Campagnarde</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+					<Attribute_Ref>Oignon</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_39</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_38</ID>
+				<Extent>
+					<Object_Ref>Margherita</Object_Ref>
+					<Object_Ref>Queen</Object_Ref>
+					<Object_Ref>Spicy Hot One</Object_Ref>
+					<Object_Ref>4 Fromages</Object_Ref>
+					<Object_Ref>Romaine</Object_Ref>
+					<Object_Ref>Hawainne Jambon</Object_Ref>
+					<Object_Ref>Vegetarienne</Object_Ref>
+					<Object_Ref>Provencale</Object_Ref>
+					<Object_Ref>Louisiane</Object_Ref>
+					<Object_Ref>Cabri</Object_Ref>
+					<Object_Ref>Orientale</Object_Ref>
+					<Object_Ref>Pepperoni Lovers</Object_Ref>
+					<Object_Ref>Supreme</Object_Ref>
+					<Object_Ref>Forestiere</Object_Ref>
+					<Object_Ref>Samourai</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Base Tomate</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_42</Concept_Ref>
+					<Concept_Ref>Concept_Pizza_40</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_40</ID>
+				<Extent>
+					<Object_Ref>Margherita</Object_Ref>
+					<Object_Ref>Queen</Object_Ref>
+					<Object_Ref>Spicy Hot One</Object_Ref>
+					<Object_Ref>4 Fromages</Object_Ref>
+					<Object_Ref>Kasbah</Object_Ref>
+					<Object_Ref>Romaine</Object_Ref>
+					<Object_Ref>Hawainne Jambon</Object_Ref>
+					<Object_Ref>Vegetarienne</Object_Ref>
+					<Object_Ref>Provencale</Object_Ref>
+					<Object_Ref>Louisiane</Object_Ref>
+					<Object_Ref>Cabri</Object_Ref>
+					<Object_Ref>Orientale</Object_Ref>
+					<Object_Ref>Pepperoni Lovers</Object_Ref>
+					<Object_Ref>Supreme</Object_Ref>
+					<Object_Ref>Forestiere</Object_Ref>
+					<Object_Ref>Samourai</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Base Tomate</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_39</ID>
+				<Extent>
+					<Object_Ref>Queen</Object_Ref>
+					<Object_Ref>Spicy Hot One</Object_Ref>
+					<Object_Ref>Kasbah</Object_Ref>
+					<Object_Ref>Mafia Blues</Object_Ref>
+					<Object_Ref>Vegetarienne</Object_Ref>
+					<Object_Ref>Provencale</Object_Ref>
+					<Object_Ref>Louisiane</Object_Ref>
+					<Object_Ref>Raclette</Object_Ref>
+					<Object_Ref>Texanne BBQ</Object_Ref>
+					<Object_Ref>Orientale</Object_Ref>
+					<Object_Ref>Supreme</Object_Ref>
+					<Object_Ref>Montagnarde</Object_Ref>
+					<Object_Ref>Forestiere</Object_Ref>
+					<Object_Ref>Samourai</Object_Ref>
+					<Object_Ref>Western Classic</Object_Ref>
+					<Object_Ref>Campagnarde</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Legumes</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_41</ID>
+				<Extent>
+					<Object_Ref>Queen</Object_Ref>
+					<Object_Ref>Spicy Hot One</Object_Ref>
+					<Object_Ref>Kasbah</Object_Ref>
+					<Object_Ref>Mafia Blues</Object_Ref>
+					<Object_Ref>Romaine</Object_Ref>
+					<Object_Ref>Hawainne Jambon</Object_Ref>
+					<Object_Ref>Louisiane</Object_Ref>
+					<Object_Ref>Raclette</Object_Ref>
+					<Object_Ref>Texanne BBQ</Object_Ref>
+					<Object_Ref>Orientale</Object_Ref>
+					<Object_Ref>Pepperoni Lovers</Object_Ref>
+					<Object_Ref>Supreme</Object_Ref>
+					<Object_Ref>Montagnarde</Object_Ref>
+					<Object_Ref>Samourai</Object_Ref>
+					<Object_Ref>Western Classic</Object_Ref>
+					<Object_Ref>Campagnarde</Object_Ref>
+					<Object_Ref>BPM</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Viande</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_42</ID>
+				<Extent>
+					<Object_Ref>Margherita</Object_Ref>
+					<Object_Ref>Queen</Object_Ref>
+					<Object_Ref>Spicy Hot One</Object_Ref>
+					<Object_Ref>4 Fromages</Object_Ref>
+					<Object_Ref>Nordique</Object_Ref>
+					<Object_Ref>Mafia Blues</Object_Ref>
+					<Object_Ref>Romaine</Object_Ref>
+					<Object_Ref>Hawainne Jambon</Object_Ref>
+					<Object_Ref>Vegetarienne</Object_Ref>
+					<Object_Ref>Provencale</Object_Ref>
+					<Object_Ref>Louisiane</Object_Ref>
+					<Object_Ref>Raclette</Object_Ref>
+					<Object_Ref>Texanne BBQ</Object_Ref>
+					<Object_Ref>Cabri</Object_Ref>
+					<Object_Ref>Orientale</Object_Ref>
+					<Object_Ref>Pepperoni Lovers</Object_Ref>
+					<Object_Ref>Supreme</Object_Ref>
+					<Object_Ref>Montagnarde</Object_Ref>
+					<Object_Ref>Chevre Miel</Object_Ref>
+					<Object_Ref>Forestiere</Object_Ref>
+					<Object_Ref>Samourai</Object_Ref>
+					<Object_Ref>Western Classic</Object_Ref>
+					<Object_Ref>Campagnarde</Object_Ref>
+					<Object_Ref>BPM</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+				</UpperCovers>
+			</Concept>
+			<Concept>
+				<ID>Concept_Pizza_13</ID>
+				<Extent>
+					<Object_Ref>Hawainne Jambon</Object_Ref>
+				</Extent>
+				<Intent>
+					<Attribute_Ref>Base Tomate</Attribute_Ref>
+					<Attribute_Ref>Porc</Attribute_Ref>
+					<Attribute_Ref>Viande</Attribute_Ref>
+					<Attribute_Ref>Mozzarella</Attribute_Ref>
+					<Attribute_Ref>Ananas</Attribute_Ref>
+					<Attribute_Ref>Fromage</Attribute_Ref>
+				</Intent>
+				<UpperCovers>
+					<Concept_Ref>Concept_Pizza_32</Concept_Ref>
+				</UpperCovers>
+			</Concept>
+		</Lattice>
+	</Step >
+</RCAExplore_Document>
