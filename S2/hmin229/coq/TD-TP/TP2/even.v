@@ -22,6 +22,8 @@ Ltac Teven:=
 
 Goal is_even 14.
 Teven.
+Goal ~is_even 13.
+
 
 
 Ltac notTeven:=   
