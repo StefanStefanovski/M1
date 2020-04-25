@@ -28,12 +28,19 @@ de variables de propositions*)
 Inductive bool : Set :=
   | true : bool
   | false : bool.
+Definition Is_true (b:bool) :=
+  match b with
+    | true => True
+    | false => False
+  end.
+(* On definit le la fonction et (/\) B x B vers B; (B: boolean) *)
+ Delimit Scope bool_scope with bool.
 
-(* On definit le la fonction et (/\) B x B vers B (B: bool) *)
- 
-
-
-
+Definition negB (b1 : bool) : bool :=
+  match b1 with
+    | false => true
+    | true => false
+  end.
 Definition andB (b1 b2 : bool) : bool :=
   match b1, b2 with
     | true, true => true
@@ -41,9 +48,35 @@ Definition andB (b1 b2 : bool) : bool :=
     | false, true => false
     | false, false => false
   end.
-Lemma exempleAndBool: forall a b: bool, andB a b = true -> a = true /\ b = true.
-Proof.
-intros.
-elim H.
-split.
+
+Definition orB (b1 b2 : bool) : bool :=
+  match b1, b2 with
+    | true, true => true
+    | true, false => true
+    | false, true => true
+    | false, false => false
+  end.
+Definition impliqueB (b1 b2 : bool) : bool :=
+  match b1, b2 with
+    | true, true => true
+    | true, false => false
+    | false, true => true
+    | false, false => true
+  end.
+Definition equivB (b1 b2 : bool) : bool :=
+  match b1, b2 with
+    | true, true => true
+    | true, false => false
+    | false, true => false
+    | false, false => true
+  end.
+ 
+
+
+
+
+
+
+
+
 
