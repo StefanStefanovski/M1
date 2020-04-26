@@ -28,13 +28,42 @@ de variables de propositions*)
 Inductive bool : Set :=
   | true : bool
   | false : bool.
+
+
+Check bool_rect.
+(* bool_rect
+     : forall P : bool -> Type, P true -> P false -> forall b : bool, P b 
+*)
+Check bool_ind.
+(* bool_ind
+     : forall P : bool -> Prop, P true -> P false -> forall b : bool, P b*)
+
+Check bool_rec.
+(* bool_rec
+     : forall P : bool -> Set, P true -> P false -> forall b : bool, P b
+*)
+
+(* exemple que bool est soit true ou false*)
+Lemma no_other_bool :
+forall b:bool, b = true \/ b = false.
+intros.
+destruct b.
+(* premier cas b est true*)
+left. reflexivity.
+(* deuxieme cas b est false*)
+right. reflexivity.
+
+
+Inductive False : Prop := .
+Inductive True : Prop :=
+| I : True.
+
 Definition Is_true (b:bool) :=
   match b with
     | true => True
     | false => False
   end.
-(* On definit le la fonction et (/\) B x B vers B; (B: boolean) *)
- Delimit Scope bool_scope with bool.
+(* On definit les fonctions B x B vers B; (B: boolean) *)
 
 Definition negB (b1 : bool) : bool :=
   match b1 with
@@ -70,7 +99,15 @@ Definition equivB (b1 b2 : bool) : bool :=
     | false, true => false
     | false, false => true
   end.
- 
+
+
+Lemma exB1: forall a b:bool, andB a b = true -> a = true /\ b = true.
+Proof.
+intros. unfold andB.
+
+.
+
+
 
 
 
