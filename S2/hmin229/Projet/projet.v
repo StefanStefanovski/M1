@@ -37,7 +37,6 @@ Check bool_rect.
 Check bool_ind.
 (* bool_ind
      : forall P : bool -> Prop, P true -> P false -> forall b : bool, P b*)
-
 Check bool_rec.
 (* bool_rec
      : forall P : bool -> Set, P true -> P false -> forall b : bool, P b
@@ -99,15 +98,14 @@ Definition equivB (b1 b2 : bool) : bool :=
     | false, true => false
     | false, false => true
   end.
-
-
+(*
 Lemma exB1: forall a b:bool, andB a b = true -> a = true /\ b = true.
 Proof.
-intros. unfold andB.
+intros.
+simpl.
+*)
 
-.
-
-
+(* 3) ***** LK0, Definitions des regles  ******)
 
 
 
