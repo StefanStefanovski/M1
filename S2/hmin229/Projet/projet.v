@@ -1,4 +1,4 @@
-Parameters A B C: Prop.
+Variables A B C: Prop.
 (* 1.1 ==>  **** Exemples de formules ****)
 
 Lemma ex1: B -> A \/ B.
@@ -20,6 +20,38 @@ intro.
 left.
 assumption.
 Qed.
+(*preuves d'associativité a gauche*)
+Lemma AssocEt: forall (A B C :Prop), (A /\ B /\ C) -> 
+              ((A /\ B) /\ C).
+Proof.
+  intros.
+  elim H.
+  intros.
+  elim H1.
+  intros.
+  split.
+  split.
+  assumption. assumption. assumption.
+Qed.
+Lemma AssocOu: forall (A B C : Prop),(A \/ B \/ C) ->
+               ((A \/ B) \/ C).
+Proof.
+  intros.
+  elim H.
+  intros.
+  left.
+  left.
+  assumption.
+  intros.
+  elim H0.
+  intros.
+  left; right; assumption.
+  intros.
+  right; assumption.
+Qed.
+  
+  
+  
 
 (* 2.1 ==> **** Définition de la notion de satisfiabilité, validité, insatisfiabilité*)
 (* On definit le boolean (bool) pour les valeurs 
@@ -45,12 +77,14 @@ Check bool_rec.
 (* exemple que bool est soit true ou false*)
 Lemma no_other_bool :
 forall b:bool, b = true \/ b = false.
+Proof.
 intros.
 destruct b.
 (* premier cas b est true*)
 left. reflexivity.
 (* deuxieme cas b est false*)
 right. reflexivity.
+Qed. 
 
 
 Inductive False : Prop := .
@@ -98,6 +132,24 @@ Definition equivB (b1 b2 : bool) : bool :=
     | false, true => false
     | false, false => true
   end.
+
+(* exemples *)
+Theorem ttrue: Is_true true.
+Proof.
+  simpl.
+  reflexivity.
+Qed.
+
+(* on verifie si la fonction andB rend faux pour
+les deux parametres true et false qui et bien une
+definition du cours pour et; /\*)
+Theorem trueandtrue: (Is_true  (andB true false))->False.
+Proof.
+simpl.
+intro.
+assumption.
+Qed.
+
 (*
 Lemma exB1: forall a b:bool, andB a b = true -> a = true /\ b = true.
 Proof.
@@ -106,10 +158,33 @@ simpl.
 *)
 
 (* 3) ***** LK0, Definitions des regles  ******)
+(*definition d'une formule*)
+Open Scope list_scope.
 
+Module ListNotations.
+Notation "[ ]" := nil (format "[ ]") : list_scope.
+Notation "[ x ]" := (cons x nil) : list_scope.
+Notation "[ x ; y ; .. ; z ]" := (cons x (cons y .. (cons z nil) ..)) : list_scope.
+Fixpoint sum(l1 l2 : list nat) : (list nat) :=
+  match l1 , l2 with
+    |nil, nil => nil
+    |e1 :: tl1, e2 :: tl2 => (e1 + e2) :: (sum tl1 tl2)
+    | _, _ => nil
+  end.
 
-
-
+Inductive formule: Type:=
+  | neg: bool->formule
+  | et: bool->bool->formule
+  | ou: bool->bool->formule
+  | impl: bool->bool->formule
+  | equiv: bool->bool->formule.
+(*definition de l'hypothese qui est egalement 
+un ensemble de formules*)
+Print formule_ind.
+Inductive eval: formule->bool->:=
+  |Eneg: forall x : bool, eval (neg x) x.
+Theorem ss: forall (X : bool), eval(neg X). 
+  
 
 
 
