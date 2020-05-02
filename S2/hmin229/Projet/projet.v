@@ -282,9 +282,24 @@ Proof.
   modele.
 Qed.
 
-(* Les tactiques pour trouve si une formule est VALIDE ou INSATISFIABLE;
-  pour verifier si une formule est valide: evalFormule( (...) true ) apres appliquer la tactique valide
-  pour verifier si une formule est  insatisfiable: evalFormule( (...) false ) apres appliquer la tactique valide*)
+(* VALIDE, INSATISFIABLE ou SATISFIABLE;
+ 
+  | Pour verifier si une formule est valide nous avons crée une tactique valide qui verifie
+    si la formule est vrai pour toutes interpretations. 
+    Donc pour la formuler:
+  
+      --- forall x :bool, evalFormule( (...) true ) apres appliquer la tactique valide;
+
+    si la tactique se termine sans erreur et sans 'subgoals' c'est a dire que la formule est valide et satisfiable,
+
+  | Pour verifier si une formule est insatisfiable, la tactique valide permet également 
+    de vérifier cette propriété  en considerant que cette fois ci le test est fait si la 
+    formule est fausse pour toutes interpretations.
+    Donc pour la formuler:
+
+      --- evalFormule( (...) false ) apres appliquer la tactique valide
+   
+    si la tactique se termine sans erreur et sans 'subgoals' c'est a dire que la formule est insatisfiable*)
 Ltac destruct_all t :=
  match goal with
   | x : t |- _ => destruct x; destruct_all t
@@ -309,9 +324,9 @@ Lemma test7: forall a b :bool, evalFormule (impl( et ( P a) (P b) ) (P a)) true.
 Proof.
   valide.
 Qed.
-  
-  
 
+
+(* ************** LK *************** *)
 
 Open Scope list_scope.
 
@@ -319,19 +334,6 @@ Module ListNotations.
 Notation "[ ]" := nil (format "[ ]") : list_scope.
 Notation "[ x ]" := (cons x nil) : list_scope.
 Notation "[ x ; y ; .. ; z ]" := (cons x (cons y .. (cons z nil) ..)) : list_scope.
-
-
-
-
-
-    
-
-    
-
-
-
-
-
 
 
 (*definition de l'hypothese qui est egalement 
