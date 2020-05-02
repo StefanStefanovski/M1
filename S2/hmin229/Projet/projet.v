@@ -250,6 +250,41 @@ Proof.
 Qed.
 
 
+(* formule valide exemple de l'enonce *)
+Lemma test6: forall a b :bool, evalFormule (impl( et ( P a) (P b) ) (P a)) true.
+Proof.
+  intro.
+  intro.
+  elim a. (* pour a vrai et faux *)
+  elim b. (* pour b vrai et faux *)
+  modele. (* est-ce que c'est un modele? *)
+  modele.
+  elim b.
+  modele.
+  modele.
+Qed.
+
+Ltac valide :=
+  repeat (
+    modele; match H with
+    | context [?H : bool] => elim H 
+  end).
+Lemma test8: forall a b :bool, evalFormule (impl( et ( P a) (P b) ) (P a)) true.
+Proof.
+  intros.
+  valide.
+
+Lemma test7: forall a b :bool, evalFormule (impl( et ( P a) (P b) ) (P a)) true.
+Proof.
+
+
+
+    
+
+    
+
+
+
 
 
 

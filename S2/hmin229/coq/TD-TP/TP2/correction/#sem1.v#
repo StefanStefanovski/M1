@@ -202,8 +202,8 @@ Proof.
   simpl; reflexivity.
 Qed.
 
-(*Require Import FunInd.
-*)
+Require Import FunInd.
+
 Functional Scheme f_eval_ind := Induction for f_eval Sort Prop.
 
 Theorem f_eval_sound : forall (env : context) (e : expr) (v : value),
