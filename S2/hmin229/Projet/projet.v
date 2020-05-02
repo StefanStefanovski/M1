@@ -179,7 +179,7 @@ Qed.
 (*******  Definitions de formules  ******)
 Inductive formule: Set:=
   | P: bool->formule
-  | neg: bool->formule
+  | neg: formule->formule
   | et: formule->formule->formule
   | ou: formule->formule->formule
   | impl: formule->formule->formule
@@ -189,7 +189,8 @@ Inductive formule: Set:=
 Inductive evalFormule: formule -> bool -> Prop:=
   | EP: forall c: bool, evalFormule(P c) c
 
-  | Eneg: forall c: bool, evalFormule(neg  c) (negB c)
+  | Eneg: forall (e1: formule) (v1 v :bool), 
+    evalFormule e1 v1 -> v = negB v1 -> evalFormule (neg e1) v
 
   | Eand: forall (e1 e2 : formule) (v1 v2 v : bool),
     evalFormule e1 v1 -> evalFormule e2 v2 ->
@@ -207,8 +208,29 @@ Inductive evalFormule: formule -> bool -> Prop:=
     evalFormule e1 v1 -> evalFormule e2 v2 ->
     v = equivB v1 v2 -> evalFormule (equiv e1 e2) v.
 
+
 (* Exemples *)
 
+Lemma ttt: evalFormule (neg (P true)) false.
+Proof.
+  eapply Eneg.
+  apply EP.
+  simpl.
+  reflexivity.
+Qed.
+
+
+Lemma test1: evalFormule (et (P true) (neg ( (P true)))) false.
+Proof.
+  eapply Eand.
+  apply EP.
+  eapply Eneg.
+  apply EP.
+  auto.
+  reflexivity.
+Qed.
+
+ 
 Lemma test: evalFormule ( et ( P true) (P true) ) true.
 Proof.
   eapply Eand.
@@ -217,19 +239,7 @@ Proof.
   simpl.
   reflexivity.
 Qed.
-Lemma test1: evalFormule (neg  true) false.
-Proof.
-  eapply Eneg.
-Qed.
 
-(*  
-  !!!!!!!!!!!! TO DO !!!!!!!!!!!!!!!!! 
-
-Pour l'instant la negation marche que avec des
-propositions et pas avec une formule, on a pas encore 
-definit la transomation
-Lemma test2: evalFormule (neg et (P true) (P false)) true.
-et ajouter des exemples*)
 
 (* definition d'une tactic qui verifie si l'interpretation donnée 
 est un modèle de la formule *) 
@@ -237,6 +247,7 @@ Ltac modele :=
 repeat(
    auto; match goal with
   | |- context [P _] => apply EP
+  | |- context [neg _] => eapply Eneg
   | |- context [et _ _] => eapply Eand
   | |- context [ou _ _] => eapply Eor
   | |- context [impl _ _] => eapply Eimpl
@@ -249,33 +260,67 @@ Proof.
   modele.
 Qed.
 
+(* Dans le cas où nous souhaitons prouver que ce n'est pas un modele 
+  cela est fait en remplacant le resultat true par false voir l'exemple d'un
+  contre modèle ci dessous pour la formule précédente *)
+Lemma test51: evalFormule ( et ( P true) (P false) ) false.
+Proof.
+  modele.
+Qed.
 
 (* formule valide exemple de l'enonce *)
 Lemma test6: forall a b :bool, evalFormule (impl( et ( P a) (P b) ) (P a)) true.
 Proof.
   intro.
   intro.
-  elim a. (* pour a vrai et faux *)
-  elim b. (* pour b vrai et faux *)
+  destruct a. (* pour a vrai et faux // avec elim c'est possible aussi*)
+  destruct b. (* pour b vrai et faux *)
   modele. (* est-ce que c'est un modele? *)
   modele.
-  elim b.
+  destruct b.
   modele.
   modele.
 Qed.
 
-Ltac valide :=
-  repeat (
-    modele; match H with
-    | context [?H : bool] => elim H 
-  end).
+(* Les tactiques pour trouve si une formule est VALIDE ou INSATISFIABLE;
+  pour verifier si une formule est valide: evalFormule( (...) true ) apres appliquer la tactique valide
+  pour verifier si une formule est  insatisfiable: evalFormule( (...) false ) apres appliquer la tactique valide*)
+Ltac destruct_all t :=
+ match goal with
+  | x : t |- _ => destruct x; destruct_all t
+  | _ => idtac
+ end.
+Ltac valide := 
+  intros; destruct_all bool; repeat modele.
+
+
 Lemma test8: forall a b :bool, evalFormule (impl( et ( P a) (P b) ) (P a)) true.
 Proof.
-  intros.
   valide.
+Qed.
+
+(* exemple de l'enonce A et non A *)
+Lemma test10: forall  a : bool, evalFormule (et (P a) (neg (P a))) false.
+Proof.
+  valide.
+Qed.
 
 Lemma test7: forall a b :bool, evalFormule (impl( et ( P a) (P b) ) (P a)) true.
 Proof.
+  valide.
+Qed.
+  
+  
+
+
+Open Scope list_scope.
+
+Module ListNotations.
+Notation "[ ]" := nil (format "[ ]") : list_scope.
+Notation "[ x ]" := (cons x nil) : list_scope.
+Notation "[ x ; y ; .. ; z ]" := (cons x (cons y .. (cons z nil) ..)) : list_scope.
+
+
 
 
 
@@ -291,19 +336,7 @@ Proof.
 
 (*definition de l'hypothese qui est egalement 
 un ensemble de formules*)
-Print formule_ind.
-Inductive eval: formule->bool->:=
-  |Eneg: forall x : bool, eval (neg x) x.
-Theorem ss: forall (X : bool), eval(neg X). 
 
-
-
-Open Scope list_scope.
-
-Module ListNotations.
-Notation "[ ]" := nil (format "[ ]") : list_scope.
-Notation "[ x ]" := (cons x nil) : list_scope.
-Notation "[ x ; y ; .. ; z ]" := (cons x (cons y .. (cons z nil) ..)) : list_scope.
 Fixpoint sum(l1 l2 : list nat) : (list nat) :=
   match l1 , l2 with
     |nil, nil => nil
