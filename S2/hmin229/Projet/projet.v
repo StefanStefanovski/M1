@@ -1,26 +1,27 @@
 Variables A B C: Prop.
-(* 1.1 ==>  **** Exemples de formules ****)
+(* 1 ==>  **** Exemples de formules de proposition****)
 
 Lemma ex1: B -> A \/ B.
 Proof.
-intro.
-right.
-assumption.
+  intro.
+  right.
+  assumption.
 Qed.
 
 Lemma ex2: A \/ B -> B \/ A.
 Proof.
-(*tauto.*)
-intro.
-elim H.
-intro.
-right.
-assumption.
-intro.
-left.
-assumption.
+  (*tauto.*)
+  intro.
+  elim H.
+  intro.
+  right.
+  assumption.
+  intro.
+  left.
+  assumption.
 Qed.
-(*preuves d'associativité a gauche*)
+
+(****** preuves d'associativité a gauche *****)
 Lemma AssocEt: forall (A B C :Prop), (A /\ B /\ C) -> 
               ((A /\ B) /\ C).
 Proof.
@@ -50,14 +51,11 @@ Proof.
   right; assumption.
 Qed.
   
-  
-  
 
-(* 2.1 ==> **** Définition de la notion de satisfiabilité, validité, insatisfiabilité*)
-(* On definit le boolean (bool) pour les valeurs 
-de variables de propositions*)
+(* Definition de type boolean (bool) pour les valeurs 
+de variables de propositions qui peut être vrai ou faux *)
 
-Inductive bool : Set :=
+Inductive bool : Type :=
   | true : bool
   | false : bool.
 
@@ -78,32 +76,36 @@ Check bool_rec.
 Lemma no_other_bool :
 forall b:bool, b = true \/ b = false.
 Proof.
-intros.
-destruct b.
-(* premier cas b est true*)
-left. reflexivity.
-(* deuxieme cas b est false*)
-right. reflexivity.
+  intros.
+  destruct b.
+  (* premier cas b est true*)
+    left; reflexivity.
+  (* deuxieme cas b est false*)
+    right; reflexivity.
 Qed. 
 
+(* Ici nous avons ajouté des definitions pour le type bool qui 
+  rendent une proposition true est True (vrai) et false est False (faux) *)
 
 Inductive False : Prop := .
 Inductive True : Prop :=
 | I : True.
+
 
 Definition Is_true (b:bool) :=
   match b with
     | true => True
     | false => False
   end.
-(* On definit les fonctions B x B vers B; (B: boolean) *)
+
+(* Definitions de fonctions B x B vers B; (B: boolean) *)
 
 Definition negB (b1 : bool) : bool :=
   match b1 with
     | false => true
     | true => false
   end.
-Definition andB (b1 b2 : bool) : bool :=
+Definition andB (b1 b2 : bool) :=
   match b1, b2 with
     | true, true => true
     | true, false => false
@@ -118,7 +120,7 @@ Definition orB (b1 b2 : bool) : bool :=
     | false, true => true
     | false, false => false
   end.
-Definition impliqueB (b1 b2 : bool) : bool :=
+Definition implB (b1 b2 : bool) : bool :=
   match b1, b2 with
     | true, true => true
     | true, false => false
@@ -140,25 +142,106 @@ Proof.
   reflexivity.
 Qed.
 
-(* on verifie si la fonction andB rend faux pour
+(* Verification si la fonction andB rend faux pour
 les deux parametres true et false qui et bien une
 definition du cours pour et; /\*)
-Theorem trueandtrue: (Is_true  (andB true false))->False.
+Theorem exB: (Is_true  (andB true false))->False.
 Proof.
-simpl.
-intro.
-assumption.
+  simpl.
+  intro.
+  assumption.
 Qed.
 
-(*
-Lemma exB1: forall a b:bool, andB a b = true -> a = true /\ b = true.
+(* test pour la fonction ou \/ *)
+Lemma exB1: forall a b :bool, orB a true =  true.
 Proof.
-intros.
-simpl.
-*)
+  intros.
+  elim a.
+  simpl.
+  reflexivity.
+  simpl.
+  reflexivity.
+Qed.
+(* test pour equivalent <-> *)
+Lemma eqb_reflx : forall b:bool, equivB b b = true.
+Proof.
+  intros.
+  elim b.
+  simpl.
+  reflexivity.
+  simpl; reflexivity.
+Qed.
 
-(* 3) ***** LK0, Definitions des regles  ******)
-(*definition d'une formule*)
+(* !!!!!!!!!! Manques des tests pour implication et negation  !!!!!!!!
+            TO DO!!!! *)
+
+
+(*******  Definitions de formules  ******)
+Inductive formule: Set:=
+  | P: bool->formule
+  | neg: bool->formule
+  | et: formule->formule->formule
+  | ou: formule->formule->formule
+  | impl: formule->formule->formule
+  | equiv: formule->formule->formule.
+
+(******* Evaluation d'une formule *********)
+Inductive evalFormule: formule -> bool -> Prop:=
+  | EP: forall c: bool, evalFormule(P c) c
+
+  | Eneg: forall c: bool, evalFormule(neg  c) (negB c)
+
+  | Eand: forall (e1 e2 : formule) (v1 v2 v : bool),
+    evalFormule e1 v1 -> evalFormule e2 v2 ->
+    v = andB v1 v2 -> evalFormule (et e1 e2) v
+
+  | Eor: forall (e1 e2 : formule) (v1 v2 v : bool),
+    evalFormule e1 v1 -> evalFormule e2 v2 ->
+    v = orB v1 v2 -> evalFormule (ou e1 e2) v
+
+  | Eimpl: forall (e1 e2 : formule) (v1 v2 v : bool),
+    evalFormule e1 v1 -> evalFormule e2 v2 ->
+    v = implB v1 v2 -> evalFormule (impl e1 e2) v
+
+  | Eequiv: forall (e1 e2 : formule) (v1 v2 v : bool),
+    evalFormule e1 v1 -> evalFormule e2 v2 ->
+    v = equivB v1 v2 -> evalFormule (equiv e1 e2) v.
+
+(* Exemples *)
+
+Lemma test: evalFormule ( et ( P true) (P true) ) true.
+Proof.
+  eapply Eand.
+  apply EP.
+  apply EP.
+  simpl.
+  reflexivity.
+Qed.
+Lemma test1: evalFormule (neg  true) false.
+Proof.
+  eapply Eneg.
+Qed.
+
+(* Pour l'instant la negation marche que avec des
+propositions et pas avec une formule, on a pas encore 
+definit la transomation
+Lemma test2: evalFormule (neg et (P true) (P false)) true.
+  !!!!!!!!!!!! TO DO !!!!!!!!!!!!!!!!!*)
+
+
+
+
+
+
+(*definition de l'hyp othese qui est egalement 
+un ensemble de formules*)
+Print formule_ind.
+Inductive eval: formule->bool->:=
+  |Eneg: forall x : bool, eval (neg x) x.
+Theorem ss: forall (X : bool), eval(neg X). 
+
+
+
 Open Scope list_scope.
 
 Module ListNotations.
@@ -172,18 +255,7 @@ Fixpoint sum(l1 l2 : list nat) : (list nat) :=
     | _, _ => nil
   end.
 
-Inductive formule: Type:=
-  | neg: bool->formule
-  | et: bool->bool->formule
-  | ou: bool->bool->formule
-  | impl: bool->bool->formule
-  | equiv: bool->bool->formule.
-(*definition de l'hypothese qui est egalement 
-un ensemble de formules*)
-Print formule_ind.
-Inductive eval: formule->bool->:=
-  |Eneg: forall x : bool, eval (neg x) x.
-Theorem ss: forall (X : bool), eval(neg X). 
+
   
 
 
