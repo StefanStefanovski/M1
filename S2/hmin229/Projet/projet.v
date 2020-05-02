@@ -175,7 +175,7 @@ Qed.
 (* !!!!!!!!!! Manques des tests pour implication et negation  !!!!!!!!
             TO DO!!!! *)
 
-
+(* ******************  2    ******************)
 (*******  Definitions de formules  ******)
 Inductive formule: Set:=
   | P: bool->formule
@@ -222,18 +222,39 @@ Proof.
   eapply Eneg.
 Qed.
 
-(* Pour l'instant la negation marche que avec des
+(*  
+  !!!!!!!!!!!! TO DO !!!!!!!!!!!!!!!!! 
+
+Pour l'instant la negation marche que avec des
 propositions et pas avec une formule, on a pas encore 
 definit la transomation
 Lemma test2: evalFormule (neg et (P true) (P false)) true.
-  !!!!!!!!!!!! TO DO !!!!!!!!!!!!!!!!!*)
+et ajouter des exemples*)
+
+(* definition d'une tactic qui verifie si l'interpretation donnée 
+est un modèle de la formule *) 
+Ltac modele :=
+repeat(
+   auto; match goal with
+  | |- context [P _] => apply EP
+  | |- context [et _ _] => eapply Eand
+  | |- context [ou _ _] => eapply Eor
+  | |- context [impl _ _] => eapply Eimpl
+  | |- context [equiv _ _] => eapply Eequiv
+end).
+
+(**** Exemple ****)
+Lemma test5: evalFormule ( et ( P true) (P true) ) true.
+Proof.
+  modele.
+Qed.
 
 
 
 
 
 
-(*definition de l'hyp othese qui est egalement 
+(*definition de l'hypothese qui est egalement 
 un ensemble de formules*)
 Print formule_ind.
 Inductive eval: formule->bool->:=
