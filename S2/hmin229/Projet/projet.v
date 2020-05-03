@@ -335,9 +335,19 @@ Notation "[ ]" := nil (format "[ ]") : list_scope.
 Notation "[ x ]" := (cons x nil) : list_scope.
 Notation "[ x ; y ; .. ; z ]" := (cons x (cons y .. (cons z nil) ..)) : list_scope.
 
+Inductive sequence: Set :=
+  | Gamma : list formule->sequence
+  | Delta : list formule->sequence.
 
+Inductive regles: Set->Prop :=
+  | ax: forall G D: sequence,   
 (*definition de l'hypothese qui est egalement 
 un ensemble de formules*)
+Definition tl (l:list formule) :=
+    match l with
+      | [] => nil
+      | a :: m => m
+    end.
 
 Fixpoint sum(l1 l2 : list nat) : (list nat) :=
   match l1 , l2 with
