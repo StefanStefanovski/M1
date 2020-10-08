@@ -1,0 +1,14 @@
+;(defun myleaves (tree)
+;    (cons (if(atom (car tree))
+;	      (car tree)
+;	    (myleaves (car tree))) (if(equal nil (cdr tree))
+;				       nil
+					;(myleaves (cdr tree)))))
+
+
+;(defun myleaves(tree)
+ ; (cons 
+ 
+      
+       
+	      
