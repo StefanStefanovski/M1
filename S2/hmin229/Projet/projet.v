@@ -1,3 +1,8 @@
+(* Stefan Stefanovski 
+  Hamza Raghbib *)
+
+
+
 Variables A B C: Prop.
 (* 1 ==>  **** Exemples de formules de proposition****)
 
@@ -172,8 +177,6 @@ Proof.
   simpl; reflexivity.
 Qed.
 
-(* !!!!!!!!!! Manques des tests pour implication et negation  !!!!!!!!
-            TO DO!!!! *)
 
 (* ******************  2    ******************)
 (*******  Definitions de formules  ******)
@@ -335,31 +338,123 @@ Notation "[ ]" := nil (format "[ ]") : list_scope.
 Notation "[ x ]" := (cons x nil) : list_scope.
 Notation "[ x ; y ; .. ; z ]" := (cons x (cons y .. (cons z nil) ..)) : list_scope.
 
-Inductive sequence: Set :=
+Inductive sequence: Set :=  
   | Gamma : list formule->sequence
   | Delta : list formule->sequence.
 
-Inductive regles: Set->Prop :=
-  | ax: forall G D: sequence,   
-(*definition de l'hypothese qui est egalement 
-un ensemble de formules*)
-Definition tl (l:list formule) :=
-    match l with
-      | [] => nil
-      | a :: m => m
-    end.
 
-Fixpoint sum(l1 l2 : list nat) : (list nat) :=
-  match l1 , l2 with
-    |nil, nil => nil
-    |e1 :: tl1, e2 :: tl2 => (e1 + e2) :: (sum tl1 tl2)
-    | _, _ => nil
-  end.
+(*
+4) Montrons que le système LK est correct. 
+
+Par induction sur la dérivation du séquent ∆ ├  Γ dans le 
+système G à l'aide de la réversibilité et du fait que les axiomes 
+sont des séquents valides. Pour développer cette preuve on utilise la notation
+ ∆ ⇒ Γ pour la formule associée au séquent ∆ ├ Γ (même si ∆ ⇒ Γ n'est pas 
+proprement une formule). 
+
+Cas de base : 
+La dérivation est de la forme  
+ 
+                                                    _______________(ax)
+                                                       ∆’ , A ├ Γ’, A
+                                                                                             
+Alors on montre que ∆’ ∧ A ⇒ Γ’ ∨ A est valide par coq.
+
+Si ∆’ = B et Γ’ = C on a 
+
+Theorem Cas_base : (forall A B C : Prop,
+(B→ C)→ ((A /\ B) →  (C \/ A))).
+Proof.
+intros.
+elim H0.
+right; assumption.
+Qed.
+
+Si ∆’ = B /\ D et Γ’ = C \/ E on a par coq toujours. 
+
+∆’ ∧ A ⇒ Γ’ ∨ A est valide.
+*)
+Theorem Cas_base_2 : (forall A B C D E : Prop,
+((B/\D) -> (C\/E))-> ((B /\ D /\ A) -> (C \/ D \/ A))).
+Proof.
+intros.
+elim H0.
+intros.
+elim H2.
+intros.
+right.
+right.
+assumption.
+Qed.
+(*
+Donc par récurrence on peut montrer que pour n’import quelle formule ∆’ et Γ’ 
+on a ∆├ Γ.
 
 
-  
+Les cas inductifs :
+1er cas )      
+La dérivation est de la forme                                                     .
+                                                                                                   . 
+                                                                                        ______________
+                                                                                             ∆’ , A ,B├ Γ 
+                                                                                          ______________( ˄gauche) 
+                                                                                             ∆’ , A ˄ B├ Γ     
 
 
 
+On montre que ∆’ , A ∧ B ⇒ Γ est valide
+
+*)
+Theorem Cas_induc_ 1 : (forall A B C D  : Prop,
+(D → C )→  ((D /\( B /\ A)) →  C)).
+Proof.
+intros.
+elim H0.
+intros.
+elim H2.
+elim H0.
+intros.
+apply H.
+apply H1.
+Qed.
+
+∆’ , A ∧ B ⇒ Γ est valide.
+
+2eme cas inductif) 
+La dérivation est de la forme 
+
+                  .                     .
+                  .                     .
+            ________       _________
+            ∆’ , A ├ Γ       ∆’ , B ├ Γ
+           _______________________ (˅gauche)
+                      ∆’ , A ˅ B ├ Γ
+    
+
+de continue de cette manière pour prouver la validité des cas inductifs 
+(on trouve qu’ils sont valides) ce qui prouve que le système LK est correct.
+5)
+Montrons que le système LK est complet.
+
+Pour montrer que le système LK est complet, on construit une dérivation ∆ ├ LK Γ 
+dans le système LK sans coupures, ceci en prenant comme racine le séquent ∆├  Γ 
+et en appliquant les règles du système du bas vers le haut aussi longtemps 
+que possible. Ce processus s'arrête nécessairement car tout séquent prémisse 
+est "plus petit" que le séquent conclusion (propriété de sous-formule). 
+En plus, comme le séquent de la racine est valide, tous les séquents 
+introduits par cette construction sont valides d'après le théorème de 
+réversibilité. 
+Pour conclure il faut montrer que la construction s'arrête sur des séquents 
+axiomes, c'est à dire, que toute feuille de l'arbre de dérivation est un axiome. 
+Pour ceci on raisonne par l'absurde. Si le séquent d'une feuille contient encore 
+un connecteur logique, alors on peut toujours appliquer une règle du système, 
+ce qui est en contradiction avec le fait que c'était une feuille. 
+Alors, si le séquent d'une feuille n'a plus de connecteur logique mais 
+il n'est pas un axiome, c'est qu'il est de la forme p1, . . . , pm ├ q1, . . . qn . 
+avec pi ≠ qj , pour tout i, j. 
+L'interprétation qui donne vrai à toutes les lettres pi et faux à toutes les 
+lettres qj falsifie ce séquent, ceci est une contradiction avec le fait que ce 
+séquent soit valide. 
+*)
 
 
